@@ -22,3 +22,6 @@ A = [1, 5, 6]
 F = 4
 M = 3
 print(solution(A=A, F=F, M=M))
+print(solution(A = [6, 1], F = 1, M = 1))
+print(solution( A = [1, 2, 3, 4], F = 4, M = 6))
+print(solution(A = [3, 2, 4, 3], F = 2, M = 4))
