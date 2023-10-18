@@ -8,13 +8,18 @@ def solution(A, F, M):
     tot_rolls = N + F
     total = M*tot_rolls
     f_sum = total - a_sum
-    possible_values = [3, 2, 4, 3]
-    print(sum(possible_values))
+    possible_values = []
+
+    while sum(possible_values) != f_sum:
+        possible_values = [random.randint(1, 6) for _ in range(F)]
+
     return possible_values
+    
+    
 
 
 
-val1 = [3, 2, 4, 3]
-val2 = 2
-val3 = 4
-print(solution(val1, val2, val3))
+A = [1, 5, 6]
+F = 4
+M = 3
+print(solution(A=A, F=F, M=M))
