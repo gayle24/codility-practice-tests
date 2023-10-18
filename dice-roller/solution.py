@@ -10,15 +10,14 @@ def solution(A, F, M):
     f_sum = total - a_sum
     possible_values = []
 
+    if f_sum> 6 * F or f_sum < F:
+        return [0]
+
     while sum(possible_values) != f_sum:
         possible_values = [random.randint(1, 6) for _ in range(F)]
 
     return possible_values
     
-    
-
-
-
 A = [1, 5, 6]
 F = 4
 M = 3
